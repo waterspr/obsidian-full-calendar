@@ -69,13 +69,29 @@
   padding: var(--size-4-2) var(--size-4-3);
   border-bottom: 1px solid var(--background-modifier-border);
 }
+.is-phone .ofc-list-controls {
+  flex-wrap: wrap;
+  gap: var(--size-4-1);
+  padding: var(--size-4-2);
+}
 .ofc-list-range-select {
   width: auto;
+}
+.is-phone .ofc-list-range-select {
+  flex-shrink: 0;
 }
 .ofc-list-custom-range {
   display: none;
   align-items: center;
   gap: var(--size-4-1);
+}
+.is-phone .ofc-list-custom-range {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.is-phone .ofc-list-custom-range input[type=date] {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 .ofc-list-range-start,
 .ofc-list-range-end {
@@ -84,6 +100,14 @@
 .ofc-list-search {
   width: 200px;
   margin-left: auto;
+}
+.is-phone .ofc-list-search {
+  width: 100%;
+  margin-left: 0;
+}
+.is-phone .fc .fc-footer-toolbar {
+  margin-bottom: calc(4rem + env(safe-area-inset-bottom, 0px));
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 /* node_modules/@fullcalendar/common/main.css */

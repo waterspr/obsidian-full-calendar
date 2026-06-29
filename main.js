@@ -58349,14 +58349,14 @@ function renderCalendar(containerEl, eventSources, settings) {
     headerToolbar: !isNarrow ? {
       left: "prev,next today",
       center: "title",
-      right: "dayGridMonth,timeGridWeek,timeGridDay,listAll,listMonth,listYear,listCustom"
+      right: "dayGridMonth,timeGridWeek,timeGridDay,listAll"
     } : !isMobile ? {
       right: "today,prev,next",
-      left: "timeGrid3Days,timeGridDay,listAll,listMonth,listYear,listCustom"
+      left: "timeGrid3Days,timeGridDay,listAll"
     } : false,
     footerToolbar: isMobile ? {
       right: "today,prev,next",
-      left: "timeGrid3Days,timeGridDay,listAll,listMonth,listYear,listCustom"
+      left: "timeGrid3Days,timeGridDay,listAll"
     } : false,
     views: {
       timeGridDay: {
